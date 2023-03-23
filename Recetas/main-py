@@ -1,0 +1,30 @@
+import requests
+from googletrans import Translator
+
+translator = Translator()
+
+def translate_text(text, source_lang, dest_lang):
+    translated_text = translator.translate(text, src=source_lang, dest=dest_lang)
+    return translated_text.text
+
+def get_recipe(ingredients):
+    url = "https://api.spoonacular.com/recipes/findByIngredients"
+    params = {
+        "apiKey": "798c2ebae35c49e2b03b15b6ff20d60b",
+        "ingredients": ingredients,
+        "number": 3,  # Numero de recetas recomendadas
+    }
+    response = requests.get(url, params=params)
+    recipes = response.json()
+    return recipes
+
+user_input = input("Ingresa los ingredientes separados por comas: ")
+translated_input = translate_text(user_input, "es", "en")
+recipes = get_recipe(translated_input)
+
+if not recipes:
+    print("No se encontraron recetas con los ingredientes proporcionados.")
+else:
+    print("Recetas recomendadas:")
+    for recipe in recipes:
+        print(recipe['title'])
