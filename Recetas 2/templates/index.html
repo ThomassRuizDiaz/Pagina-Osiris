@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscador de Recetas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Buscador de Recetas</h1>
+
+    <form method="POST" action="/">
+        <input type="text" name="user_input" placeholder="Ingrese los ingredientes...">
+        <button type="submit">Buscar</button>
+    </form>
+
+    {% if message %}
+        <h2>{{ message }}</h2>
+        {% if recipe_titles %}
+            <ul>
+                {% for title in recipe_titles %}
+                    <li>{{ title }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endif %}
+
+    <script src="{{ url_for('send_js') }}"></script>
+</body>
+</html>
