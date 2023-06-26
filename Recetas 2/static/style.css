@@ -47,3 +47,39 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.recipe-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.recipe-title {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recipe-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+

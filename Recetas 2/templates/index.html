@@ -14,15 +14,20 @@
 
     {% if message %}
         <h2>{{ message }}</h2>
-        {% if recipe_titles %}
-            <ul>
-                {% for title in recipe_titles %}
-                    <li>{{ title }}</li>
-                {% endfor %}
-            </ul>
+        {% if recipe_data %}
+            <div class="container">
+                <div class="recipe-grid">
+                    {% for recipe in recipe_data %}
+                        <div class="recipe-item">
+                            <h3 class="recipe-title">{{ recipe['title'] }}</h3>
+                            <a href="{{ url_for('show_recipe', recipe_id=recipe['recipe_id']) }}">
+                                <img src="{{ recipe['image_url'] }}" alt="{{ recipe['title'] }}" class="recipe-image">
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         {% endif %}
     {% endif %}
-
-    <script src="{{ url_for('send_js') }}"></script>
 </body>
 </html>
