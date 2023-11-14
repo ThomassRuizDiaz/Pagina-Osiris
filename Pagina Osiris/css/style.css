@@ -3,15 +3,23 @@
     padding: 0;
 }
 
+
+.lista-sin-punto{
+    text-decoration: none;
+}
+
 .titulo {
     color: #daa520;
     font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
     font-size: 50px; 
     text-align: left;
     background-color: #000;
     display: flex;
     align-items: center;
     height: 70px;
+    margin: 0%;
+    
 }
 
 .menu-navegacion {
@@ -31,8 +39,9 @@
 .text-menu{
     color: white;
     font-style: italic;
-    font-family: montserrat,Sans-serif;
+    font-family: montserrat , Sans-serif;
     text-decoration: none;
+    list-style: none;
     font-size: 20px;
 }
 
@@ -122,9 +131,88 @@ P {
 }
 
 .contenedores-formulario{
-    margin-bottom: 10px; /* Agrega margen inferior para separar los elementos */
-    border: 1px solid #ccc; /* Agrega un borde ligero */
-    border-radius: 5px; /* Agrega esquinas redondeadas */
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+nav ul li{
+    list-style-type: none;
+}
+
+.bx-menu{
+    color: white;
+}
+
+#check-menu, label{
+    display: none;
+}
+
+.imagen-restringida {
+    max-width: 100%;
+    height: auto; 
+}
+
+.contenedor-principal-carousel-compra{
+    width: 400px; 
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-cuadrado {
+    width: 380px;
+    height: 400px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.carrusel-restringido {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+.informacion-compra{
+    flex:1;
+}
+
+/* MEDIA */
+
+@media (max-width: 576px){
+    .lista-nav-menu label{
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    
+    .menu-navegacion{
+        display: none;
+    }
+
+    .titulo{
+        justify-content: center;
+    }
+    #check-menu:checked ~ .menu-navegacion{
+        display: block;
+        background-color: red;
+    }
+    
+    .footer{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-principal-carousel-compra{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }

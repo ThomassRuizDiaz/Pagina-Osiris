@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Clientes
-    </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Clientes</title>
 </head>
 <body>
     <h1 class="titulo">Osiris</h1>
-    <nav>
-        <ul class="menu-navegacion">
-            <li><a href="../index.html" class="text-menu">INICIO</a></li>
-            <li><a href="productos.html" class="text-menu">Productos</a></li>
-            <li><a href="contacto.html" class="text-menu">Contacto</a></li>
-            <li><a href="talles.html" class="text-menu">Talles</a></li>
-            <li><a href="ayuda.html" class="text-menu">AYUDA</a></li>
-        </ul>
-    </nav>
+    <nav class="lista-nav-menu">
+      <input type="checkbox" id="check-menu">
+      <label class="menu-hamburguesa" for="check-menu"><i class="bx bx-menu bx-md nav-link"></i></label>
+      <ul class="menu-navegacion">
+          <li><a href="../index.html" class="text-menu nav-link">INICIO</a></li>
+          <li><a href="productos.html" class="text-menu nav-link">Productos</a></li>
+          <li><a href="contacto.html" class="text-menu nav-link">Contacto</a></li>
+          <li><a href="talles.html" class="text-menu nav-link">Talles</a></li>
+          <li><a href="ayuda.html" class="text-menu nav-link">AYUDA</a></li>
+      </ul>
+  </nav>
     <h2>Productos</h2>
     <p>Este es el listado de nuestros productos</p>
-    <div>
-        
+    <div class="contenedor-principal-carousel-compra">
+<div class="contenedor-cuadrado">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carrusel-restringido">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/productos/buzo.png" class="d-block w-100 imagen-restringida" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="../img/productos/modelo-frente.JPG" class="d-block w-100 imagen-restringida" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/productos/modelo-espalda.JPG" class="d-block w-100 imagen-restringida" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+    <div class="informacion-compra">
+        <h>First Hoodie</h>
+        <p><a href="https://wa.me/541161701895">Contactanos a Whatsapp</a></p>
 
 
-    <a href="../index.html">Volver a la pagina principal</a>
+    </div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 <footer>
-    <div class="footer">
-        <div class="categorias">
-            <h class="h-footer">Categorias</h>
-            <ul class="lista-footer">
-                <li><a href="../index.html" class="text-footer">INICIO</a></li>
-                <li><a href="productos.html" class="text-footer">Productos</a></li>
-                <li><a href="contacto.html" class="text-footer">Contacto</a></li>
-                <li><a href="talles.html" class="text-footer">Talles</a></li>
-                <li><a href="ayuda.html" class="text-footer">AYUDA</a></li>
-            </ul>
-        </div>
-        <div class="contacto">
-            <h class="h-footer">Contacto</h>
-            <ul class="lista-footer">
-                <li><a href="https://wa.me/541161701895" class="text-footer">Whatsapp</a></li>
-                <li><a href="https://www.instagram.com/osirishoodies/" class="text-footer">Instagram</a></li>
-            </ul>
-        </div>
-    </div>
+  <div class="footer row-cols-auto">
+      <div class="categorias col-md-auto">
+          <h class="h-footer">Categorias</h>
+          <ul class="lista-footer ">
+              <li><a href="../index.html" class="text-footer nav-link">INICIO</a></li>
+              <li><a href="productos.html" class="text-footer nav-link">Productos</a></li>
+              <li><a href="contacto.html" class="text-footer nav-link">Contacto</a></li>
+              <li><a href="talles.html" class="text-footer nav-link">Talles</a></li>
+              <li><a href="ayuda.html" class="text-footer nav-link">AYUDA</a></li>
+          </ul>
+      </div>
+      <div class="contacto col-md-auto">
+          <h class="h-footer">Contacto</h>
+          <ul class="lista-footer">
+              <li><a href="https://wa.me/541161701895" class="text-footer nav-link">Whatsapp</a></li>
+              <li><a href="https://www.instagram.com/osirishoodies/" class="text-footer nav-link">Instagram</a></li>
+          </ul>
+      </div>
+  </div>
 </footer>
 </html>

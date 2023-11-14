@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Contactanos</title>
@@ -10,13 +13,15 @@
 </head>
 <body>
     <h1 class="titulo">Osiris</h1>
-    <nav>
+    <nav class="lista-nav-menu">
+        <input type="checkbox" id="check-menu">
+        <label class="menu-hamburguesa" for="check-menu"><i class="bx bx-menu bx-md nav-link"></i></label>
         <ul class="menu-navegacion">
-            <li><a href="../index.html" class="text-menu">INICIO</a></li>
-            <li><a href="productos.html" class="text-menu">Productos</a></li>
-            <li><a href="contacto.html" class="text-menu">Contacto</a></li>
-            <li><a href="talles.html" class="text-menu">Talles</a></li>
-            <li><a href="ayuda.html" class="text-menu">AYUDA</a></li>
+            <li><a href="../index.html" class="text-menu nav-link">INICIO</a></li>
+            <li><a href="productos.html" class="text-menu nav-link">Productos</a></li>
+            <li><a href="contacto.html" class="text-menu nav-link">Contacto</a></li>
+            <li><a href="talles.html" class="text-menu nav-link">Talles</a></li>
+            <li><a href="ayuda.html" class="text-menu nav-link">AYUDA</a></li>
         </ul>
     </nav>
     <h2>Contactanos</h2>
@@ -43,22 +48,22 @@
 
 </body>
 <footer>
-    <div class="footer">
-        <div class="categorias">
+    <div class="footer row-cols-auto">
+        <div class="categorias col-md-auto">
             <h class="h-footer">Categorias</h>
-            <ul class="lista-footer">
-                <li><a href="../index.html" class="text-footer">INICIO</a></li>
-                <li><a href="productos.html" class="text-footer">Productos</a></li>
-                <li><a href="contacto.html" class="text-footer">Contacto</a></li>
-                <li><a href="talles.html" class="text-footer">Talles</a></li>
-                <li><a href="ayuda.html" class="text-footer">AYUDA</a></li>
+            <ul class="lista-footer ">
+                <li><a href="../index.html" class="text-footer nav-link">INICIO</a></li>
+                <li><a href="productos.html" class="text-footer nav-link">Productos</a></li>
+                <li><a href="contacto.html" class="text-footer nav-link">Contacto</a></li>
+                <li><a href="talles.html" class="text-footer nav-link">Talles</a></li>
+                <li><a href="ayuda.html" class="text-footer nav-link">AYUDA</a></li>
             </ul>
         </div>
-        <div class="contacto">
+        <div class="contacto col-md-auto">
             <h class="h-footer">Contacto</h>
             <ul class="lista-footer">
-                <li><a href="https://wa.me/541161701895" class="text-footer">Whatsapp</a></li>
-                <li><a href="https://www.instagram.com/osirishoodies/" class="text-footer">Instagram</a></li>
+                <li><a href="https://wa.me/541161701895" class="text-footer nav-link">Whatsapp</a></li>
+                <li><a href="https://www.instagram.com/osirishoodies/" class="text-footer nav-link">Instagram</a></li>
             </ul>
         </div>
     </div>
