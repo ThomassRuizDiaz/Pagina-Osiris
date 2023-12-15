@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <h1 class="titulo">Osiris</h1>
+    <a href="../index.html" class="titulo" >Osiris</a>
     <div class="linea-difuminada"></div>
     <nav class="lista-nav-menu">
         <input type="checkbox" id="check-menu">
@@ -26,28 +26,29 @@
             <li><a href="ayuda.html" class="text-menu nav-link">AYUDA</a></li>
         </ul>
     </nav>
-    <h2>Contactanos</h2>
-    <div class="formulario-centrar">
-        <form action="" method="" class="formulario-contacto">
-        <legend class="leyenda-formulario">Envianos tus datos de contacto</legend>
-        <div>
-            <input type="text" placeholder="Nombre" class="contenedores-formulario">
-            <div>
-                <input type="email" placeholder="Correo Electronico" class="contenedores-formulario">
-            </div>
-            <div>
-                <input type="tel" placeholder="Telefono" class="contenedores-formulario">
-            </div>
-            <input type="text" placeholder="Mensaje" class="contenedores-formulario">
-            <div>
-                <input type="submit" value="Enviar" class="contenedores-formulario">
-            </div>
-        </div>
+    <div class="formulario-centrar d-flex justify-content-center align-items-center">
+        <form action="#" method="POST" class="formulario-contacto p-4 rounded">
+            <fieldset>
+                <legend class="leyenda-formulario text-center mb-4">Envíanos tus datos de contacto</legend>
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre" class="form-control contenedores-formulario">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Correo Electrónico" class="form-control contenedores-formulario">
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Teléfono" class="form-control contenedores-formulario">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Mensaje" class="form-control contenedores-formulario"></textarea>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Enviar" class="btn btn-primary btn-block contenedores-formulario">
+                </div>
+            </fieldset>
         </form>
     </div>
     
-    <a href="../index.html">Volver a la pagina principal</a>
-
 </body>
 <footer>
     <div class="footer row-cols-auto">
